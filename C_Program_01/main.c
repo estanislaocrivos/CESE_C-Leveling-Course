@@ -12,14 +12,8 @@
 
 int main(int argc, const char * argv[])
 {
-    int option;
-    float value;
-    float aux;
-    float depreciation;
-    int years;
-    float factor;
-    int end = 0;
-    float denom;
+    int option, years, end = 0;
+    float value, aux, depreciation, factor, denom;
     
     while(end != 1)
     {
