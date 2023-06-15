@@ -55,7 +55,7 @@ int main(int argc, const char * argv[])
                     {
                         depreciation = factor * (value - aux);
                         aux += depreciation;
-                        printf("La depreciación el año %d es de %.1f AR$\n", i+1, depreciation);
+                        printf("La depreciación en el año %d es de %.1f AR$\n", i+1, depreciation);
                     }
                     break;
                     
@@ -72,7 +72,7 @@ int main(int argc, const char * argv[])
                     for(int i = 0; i < years; i++)
                     {
                         depreciation = ((years - i)/denom) * value; // La primer operacion debe resultar en float
-                        printf("La depreciación el año %d es de %.1f AR$\n", i+1, depreciation);
+                        printf("La depreciación en el año %d es de %.1f AR$\n", i+1, depreciation);
                     }
                     break;
             }
