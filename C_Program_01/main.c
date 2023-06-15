@@ -21,14 +21,9 @@ int main(int argc, const char * argv[])
         printf("\nIndique el método que desee para realizar el cálculo: 1 (método lineal), 2 (método balance), 3 (método suma): ");
         scanf("%d", &option);
         
-        if (option != 1 && option != 2 && option != 3)
-        {
-            printf("Esa opción no existe. Fin del programa...\n");
-            end = 1;
-        }
-        
         if(option == 1 || option == 2 || option == 3)
         {
+            // Esto se ejecuta si se ingresa una opcion valida
             printf("Ingrese el valor del bien en AR$: ");
             scanf("%f", &value);
             
@@ -70,6 +65,12 @@ int main(int argc, const char * argv[])
                     }
                     break;
             }
+        }
+        else
+        {
+            // Si ingresan otra opcion se termina el programa
+            printf("Esa opción no existe. Fin del programa...\n");
+            end = 1;
         }
     }
     
